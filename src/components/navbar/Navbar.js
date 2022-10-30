@@ -21,9 +21,9 @@ export default function NavBar(){
                 {/* right side of the navbar */}
                 <>
                     <div className="flex items-center justify-end space-x-6">
-                    <Link to="/" className="poppins">Autos</Link>
+                    <Link to="/" className="poppins focus:outline-none transform transition duration-700 hover:scale-105">Autos</Link>
                     {/* <Link to="autos" className="poppins ">Autos</Link> */}
-                    <Link to="a-propos" className="poppins ">A propos</Link>
+                    <Link to="a-propos" className="poppins focus:outline-none transform transition duration-700 hover:scale-105">A propos</Link>
                     <Link to="nous-joindre" className="px-6 py-3 bg-blue-700 text-white rounded-full ring-blue-500 focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105">joindre</Link>
                     </div>
                 </>

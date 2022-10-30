@@ -8,7 +8,6 @@ export default function DetailScreen(){
     const navigate = useNavigate();
     const { id } = useParams();
     const { isLoading, error, data, refetch } = useGetAutoPostById(id); 
-    console.log(data)
 
     if(isLoading){ return <div>Loading...</div>}
     if(error){return <div>Error...</div>}

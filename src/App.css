@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+  background-image: url('./carbgd.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 5;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

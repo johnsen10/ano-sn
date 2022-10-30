@@ -6,6 +6,7 @@ import HomeScreen from './screens/HomeScreen';
 import JoinUsScreen from './screens/JoinUsScreen';
 import AboutUsScreen from './screens/AboutUsScreen';
 import DetailScreen from './screens/DetailScreen';
+import NotFoundScreen from './screens/NotFoundScreen';
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ function App() {
             <Route path='a-propos' element = {<AboutUsScreen/>}/>
             <Route path='nous-joindre' element = {<JoinUsScreen/>}/>
             <Route path='auto-detail/:id' element = {<DetailScreen/>}/>
+            <Route path="*" element={<NotFoundScreen />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -10,7 +10,7 @@ export default function AutoItem({...propsValues}){
             <img className='w-64 mx-auto transform transition duration-300 hover:scale-105' src={propsValues.image[0].url} alt='img'/>
             <div className='flex flex-col items-center my-3 space-y-2'>
                 <h1 className='text-gray-900 text-2xl font-bold'>{propsValues.title}</h1>
-                <p className='text-gray-500 text-sm text-center'>{propsValues.description.slice(0,50)}</p>
+                <p className='poppins text-gray-500 text-sm text-center'>{propsValues.description.slice(0,50)}</p>
                 {/* <h2 className='text-gray-900 text-2xl font-bold'>{price}</h2> */}
                 <button className='bg-blue-500 text-white rounded-lg px-8 py-2 transform transition duration-300 hover:scale-105' onClick={()=>navigate(`/auto-detail/${propsValues.id}`)}>Details</button>
             </div>

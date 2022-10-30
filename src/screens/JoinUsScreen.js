@@ -9,6 +9,7 @@ import TextArea from "../components/form/TextArea";
 import TextField from "../components/form/TextField";
 import Banner from "../components/header/Banner";
 import Button from "../components/form/Button";
+import carBackground from "../carbgd.png"
 
 export default function JoinUsScreen(){
 
@@ -52,8 +53,8 @@ export default function JoinUsScreen(){
         <Banner/>
         <div className="h-screen">  
         
-          <div className="flex content-center justify-center m-10">
-            <form className="w-96 mt-6 p-4 rounded-lg shadow-lg " onSubmit={handleSubmit}>
+          <div className=" flex content-center items-center justify-center m-10">
+            <form className="bg-blue-50 w-96 mt-6 p-4 rounded-lg shadow-lg " onSubmit={handleSubmit}>
               <div className="flex flex-col space-y-10">
                   <TextField name="fullname" type="text" value={userInput.fullname} onChange={handleChange} placeholder="votre nom et prenom" />
                   <TextField name="email" type="email" value={userInput.email} onChange={handleChange} placeholder="votre email"/>
@@ -63,6 +64,7 @@ export default function JoinUsScreen(){
               <Button text="Envoyer"/>
             </form>
           </div>
+          {/* <img className="w-96 object-contain banner" src={carBackground} alt="carBackground" /> */}
         </div>
         </>
     )
