@@ -11,6 +11,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.brush {
+  font-family: 'Brush Script MT', cursive;
+}
+
 .banner {
   background-image: url('./carbgd.png');
   background-repeat: no-repeat;
