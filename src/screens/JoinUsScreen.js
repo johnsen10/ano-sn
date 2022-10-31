@@ -53,7 +53,7 @@ export default function JoinUsScreen(){
     return(<>
         <Banner/>
         <div className="h-screen">
-          <div className="grid grid-cols-2">  
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">  
           {/* left grid for text */}
             <div className="order-1 flex flex-col justify-center items-center px-5">
               <h1 className="font-bold text-6xl text-gray-500 brush mx-10 my-5">Parlez nous de vos besoins specifiques</h1>
@@ -70,7 +70,7 @@ export default function JoinUsScreen(){
             </div>
             {/* right grid containing form */}
             <div className="order-2 flex content-center items-center justify-center m-10">
-              <form className="bg-blue-100 w-96 -mt-20 p-4 rounded-lg shadow-lg" onSubmit={handleSubmit}>
+              <form className="bg-blue-100 w-96 p-4 rounded-lg shadow-lg md:-mt-20 lg:-mt-20" onSubmit={handleSubmit}>
                 <div className="flex flex-col space-y-10">
                     <TextField name="fullname" type="text" value={userInput.fullname} onChange={handleChange} placeholder="votre nom et prenom" />
                     <TextField name="email" type="email" value={userInput.email} onChange={handleChange} placeholder="votre email"/>
