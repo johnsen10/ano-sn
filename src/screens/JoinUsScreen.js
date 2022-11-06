@@ -61,6 +61,15 @@ export default function JoinUsScreen(){
                 <span ><AiOutlineCaretRight className="text-md text-blue-500" /></span>
                 <p className=" text-gray-700 my-5 font-medium text-2xl">Avez vous trouvé ce que vous cherchez? C'est super! Ecrivez nous pour aller de l'avant avec le produit concerné</p>
               </div>
+            {/* animation */}
+            <div class="bg-white flex space-x-12 justify-center items-center">
+              <div class="flex items-center justify-center space-x-2 animate-pulse">
+                <div class="w-8 h-8 bg-indigo-500 rounded-full"></div>
+                <div class="w-8 h-8 bg-indigo-500 rounded-full"></div>
+                <div class="w-8 h-8 bg-indigo-500 rounded-full"></div>
+              </div>
+            </div>
+
               <div className="inline-flex items-baseline ">
                 <span ><AiOutlineCaretRight className="text-md text-blue-500" /></span>
                 <p className=" text-gray-700 my-5 font-medium text-2xl">Avez vous des questions, ou bien vous n'avez tout simplement pas trouvé ce que vous voulez, c'est pas grave, 
